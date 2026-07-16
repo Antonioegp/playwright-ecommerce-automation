@@ -10,12 +10,18 @@ export class RegisterPage {
         this.inputEmail = page.getByRole('textbox', { name: 'email@example.com' });
         this.inputPhoneNumber = page.getByRole('textbox', { name: 'enter your number' })
         this.selectOccupation = page.getByRole('combobox');
-        this.checkGenderMale = page.getByLabel('Male');
-        this.checkGenderFemale = page.getByLabel('Female');
+        this.checkGenderMale = page.locator("input[value='Male']");
+        this.checkGenderFemale = page.locator("input[value='Female']");
         this.inputPassword = page.getByRole('textbox', { name: 'Passsword' });
         this.inputConfirmPassword = page.getByRole('textbox', { name: 'Confirm Password' });
-        this.check18YearsOlder = page.getByText('I am 18 year or Older', { exact: true });
+        this.check18YearsOlder = page.getByRole('checkbox');
+        this.invalidEmailText = page.getByText('*Enter Valid Email', { exact: true });
+        this.emptyFirstNameText = page.getByText('*First Name is required', { exact: true });
         this.buttonRegister = page.getByRole('button');
+        this.validRegisterMessagge = page.getByRole('heading', { name: 'Account Created Successfully' });
+        this.invalidEmailRegister = page.locator("div[aria-label='User already exisits with this Email Id!']");
+        this.invalidPasswordText = page.locator("div[aria-label='Password must be 8 Character Long!']");
+        
 
     }
 
@@ -24,13 +30,12 @@ export class RegisterPage {
         await this.inputLastName.fill(lastName);
         await this.inputEmail.fill(email);
         await this.inputPhoneNumber.fill(phoneNumber);
-        await this.selectOccupation.selecOption(occupation);
+        await this.selectOccupation.selectOption(occupation);
         await this.checkGenderMale.click();
         await this.inputPassword.fill(password);
         await this.inputConfirmPassword.fill(confirmPassword);
         await this.check18YearsOlder.click();
         await this.buttonRegister.click();
-
     }
 
 
