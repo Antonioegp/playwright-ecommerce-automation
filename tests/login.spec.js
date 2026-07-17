@@ -10,8 +10,8 @@ test('@login TC-LOGIN-001: Iniciar sesión con credenciales válidas', async ({ 
     await loginPage.login(users.mainUser.username, users.mainUser.password);
 
     const dashboardPage = new DashboardPage(page);
-    await expect(dashboardPage.loginSuccessMessage).toBeVisible()
-    await expect(page).toHaveURL(url.dashboard)
+    await expect(dashboardPage.loginSuccessMessage).toBeVisible();
+    await expect(page).toHaveURL(url.dashboard);
     
 });
 

@@ -11,7 +11,7 @@ export class LoginPage {
         this.incorrectEmailMessagge = page.getByText('*Email is required', { exact: true });
         this.incorrectPasswordMessage = page.getByText('*Password is required', { exact: true });
         this.registerLink = page.locator("p.login-wrapper-footer-text");
-
+        this.logoutSuccessMessage = page.locator("div[aria-label='Logout Successfully']");
 
     }
 

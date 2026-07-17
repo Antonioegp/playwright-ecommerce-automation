@@ -1,0 +1,5 @@
+export const products = {
+    adidasOriginal: "ADIDAS ORIGINAL",
+    zaraCoat3: "ZARA COAT 3",
+    iphone13Pro: "iphone 13 pro"
+};

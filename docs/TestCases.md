@@ -36,7 +36,7 @@ TestCases.md
 | TC-DASHBOARD-001  | Verificar la carga correcta del Dashboard tras iniciar sesión                | Alta      |
 | TC-DASHBOARD-002  | Visualizar correctamente el catálogo de productos                            | Alta      |
 | TC-DASHBOARD-003  | Añadir un producto al carrito desde el Dashboard                             | Alta      |
-| TC-DASHBOARD-004  | Añadir varios productos al carrito                                           | Alta      |
+| TC-DASHBOARD-004  | Añadir todos los productos al carrito                                           | Alta      |
 | TC-DASHBOARD-005  | Verificar que se muestra el mensaje de producto añadido correctamente        | Media     |
 | TC-DASHBOARD-006  | Acceder a la página del carrito desde el Dashboard                           | Alta      |
 | TC-DASHBOARD-007  | Acceder a la página My Orders desde el Dashboard                             | Alta      |
