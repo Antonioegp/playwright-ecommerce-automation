@@ -3,3 +3,4 @@ export { DashboardPage } from "./DashboardPage";
 export { RegisterPage } from "./RegisterPage";
 export { MyCartPage } from "./MyCartPage";
 export { MyOrdersPage } from "./MyOrdersPage";
+export { CheckoutPage } from "./CheckoutPage";

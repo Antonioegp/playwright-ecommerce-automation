@@ -45,3 +45,15 @@ TestCases.md
 | TC-DASHBOARD-010  | Verificar que cada producto muestra su precio                                | Baja      |
 | TC-DASHBOARD-011  | Verificar que el filtrado de un producto por su titulo es correcto           | Baja      |
 | TC-DASHBOARD-012  | Verificar que el filtrado de un producto por su rango de precios es correcto | Baja      |
+
+## 4. Cart
+
+| ID            | Caso de prueba                                                              | Prioridad |
+| ------------- | --------------------------------------------------------------------------- | --------- |
+| TC-CART-001   | Visualizar correctamente la página del carrito                              | Alta      |
+| TC-CART-002   | Verificar que un producto añadido desde el Dashboard aparece en el carrito  | Alta      |
+| TC-CART-003   | Verificar que varios productos añadidos aparecen en el carrito              | Alta      |
+| TC-CART-004   | Verificar que se muestra el precio de un producto correctamente             | Alta      |
+| TC-CART-005   | Eliminar un producto del carrito                                            | Alta      |
+| TC-CART-006   | Verificar que el carrito queda vacío tras eliminar todos los productos      | Media     |
+| TC-CART-007   | Continuar al proceso de Checkout desde el carrito                           | Alta      |
