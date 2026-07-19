@@ -4,7 +4,8 @@ import { users, occupation } from "../test-data/users"
 import { url } from  "../test-data/urls"
 
 test('@register TC-REGISTER-001: Registrar un usuario con datos válidos', async ({ page }) => {
-  
+    
+    const today = new Date().toISOString().split('T')[0];
     const loginPage = new LoginPage(page);
     await loginPage.goTo(url.login);
     await loginPage.goToRegisterPage();
@@ -13,6 +14,7 @@ test('@register TC-REGISTER-001: Registrar un usuario con datos válidos', async
     await expect(registerPage.headingRegister).toBeVisible();
     await registerPage.registerUser(users.validRandomUser.firstName, users.validRandomUser.lastName, users.validRandomUser.username, users.validRandomUser.phoneNumber, occupation.engineer, users.validRandomUser.password, users.validRandomUser.password);
     await expect(registerPage.validRegisterMessagge).toHaveText("Account Created Successfully");
+    await page.screenshot({path: `screenshots/TC-REGISTER-001-${today}.png`, fullPage: true,  });
     
 });
 

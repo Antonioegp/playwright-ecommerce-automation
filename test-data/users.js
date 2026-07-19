@@ -12,7 +12,9 @@ export const users = {
     password: "demoQA_123456",
     firstName: faker.person.firstName(),
     lastName: faker.person.lastName(),
-    phoneNumber: faker.string.numeric(10),
+    phoneNumber:
+        faker.number.int({ min: 1, max: 9 }).toString() +
+        faker.string.numeric(9),
   }
 };
 

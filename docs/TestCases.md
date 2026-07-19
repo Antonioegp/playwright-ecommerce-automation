@@ -15,7 +15,7 @@ TestCases.md
 | TC-REGISTER-002 | Registrar un usuario ya existente                   | Alta      | 
 | TC-REGISTER-003 | Registrar un usuario con email inválido             | Media     |
 | TC-REGISTER-004 | Registrar un usuario con contraseña inválida        | Media     | 
-| TC-REGISTER-005 | Registrar un usuario con campos obligatorios vacíos | Alta      | 
+| TC-REGISTER-005 | Registrar un usuario con campos obligatorios vacíos | Alta      |
 
 ---
 
