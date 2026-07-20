@@ -6,6 +6,12 @@ export const users = {
     password: "demoQA_123456",
     incorrectPassword: "demoQS_78910"
   },
+
+  secondaryUser: {
+    username: "demoqa1@demo.com",
+    password: "demoQA_123456",
+    
+  },
   
   validRandomUser:{
     username: "demoqa"+Date.now()+"@demo.com",

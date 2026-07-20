@@ -70,3 +70,13 @@ TestCases.md
 | TC-CHECKOUT-006  | Intentar completar la compra sin seleccionar un país                            | Media     |
 | TC-CHECKOUT-007  | Intentar aplicar un codigo de cupon invalido                                    | Media     |
 | TC-CHECKOUT-008  | Verificar que el correo del usuario autenticado se muestra correctamente        | Baja      |
+
+## 6. Orders
+
+| ID             | Caso de prueba                                                                  | Prioridad |
+| -------------- | ------------------------------------------------------------------------------- | --------- |
+| TC-ORDERS-001  | Acceder correctamente a la página **My Orders**                                 | Alta      |
+| TC-ORDERS-002  | Verificar que el identificador (Order ID) del pedido es correcto                | Alta      |
+| TC-ORDERS-003  | Verificar que el detalle del pedido muestra el Order Id correcto                | Alta      |
+| TC-ORDERS-004  | Volver al Dashboard desde la página **My Orders**                               | Media     |
+| TC-ORDERS-005  | Verificar que un usuario sin pedidos no visualiza órdenes registradas           | Baja      |

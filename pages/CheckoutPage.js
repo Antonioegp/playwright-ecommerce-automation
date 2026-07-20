@@ -23,6 +23,7 @@ export class CheckoutPage {
         this.invalidPlaceOrderMessagge = page.getByLabel('Please Enter Full Shipping Information');
         this.correctCheckoutMessagge = page.getByRole('heading', { name: 'Thankyou for the order.' });
         this.checkoutOrderID = page.locator("td.em-spacer-1 label.ng-star-inserted");
+        this.buttonOrders = page.getByRole('button', { name: 'ORDERS' });
 
     }
 
@@ -82,6 +83,11 @@ export class CheckoutPage {
         const checkoutEmail = await this.labelEmail.innerText();
         return checkoutEmail;
 
+    }
+
+    async goToOrders(){
+
+        await this.buttonOrders.click();
     }
 
 }
