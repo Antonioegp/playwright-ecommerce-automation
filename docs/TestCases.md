@@ -36,7 +36,7 @@ TestCases.md
 | TC-DASHBOARD-001  | Verificar la carga correcta del Dashboard tras iniciar sesión                | Alta      |
 | TC-DASHBOARD-002  | Visualizar correctamente el catálogo de productos                            | Alta      |
 | TC-DASHBOARD-003  | Añadir un producto al carrito desde el Dashboard                             | Alta      |
-| TC-DASHBOARD-004  | Añadir todos los productos al carrito                                           | Alta      |
+| TC-DASHBOARD-004  | Añadir todos los productos al carrito                                        | Alta      |
 | TC-DASHBOARD-005  | Verificar que se muestra el mensaje de producto añadido correctamente        | Media     |
 | TC-DASHBOARD-006  | Acceder a la página del carrito desde el Dashboard                           | Alta      |
 | TC-DASHBOARD-007  | Acceder a la página My Orders desde el Dashboard                             | Alta      |
@@ -57,3 +57,16 @@ TestCases.md
 | TC-CART-005   | Eliminar un producto del carrito                                            | Alta      |
 | TC-CART-006   | Verificar que el carrito queda vacío tras eliminar todos los productos      | Media     |
 | TC-CART-007   | Continuar al proceso de Checkout desde el carrito                           | Alta      |
+
+## 5. Checkout
+
+| ID               | Caso de prueba                                                                  | Prioridad |
+| ---------------- | ------------------------------------------------------------------------------- | --------- |
+| TC-CHECKOUT-001  | Acceder correctamente a la página de Checkout desde el carrito                  | Alta      |
+| TC-CHECKOUT-002  | Verificar que se muestran correctamente los productos seleccionados             | Alta      |
+| TC-CHECKOUT-003  | Completar una compra con datos válidos                                          | Alta      |
+| TC-CHECKOUT-004  | Buscar y seleccionar un país válido durante el proceso de compra                | Alta      |
+| TC-CHECKOUT-005  | Verificar que se genera un identificador (Order ID) tras completar la compra    | Alta      |
+| TC-CHECKOUT-006  | Intentar completar la compra sin seleccionar un país                            | Media     |
+| TC-CHECKOUT-007  | Intentar aplicar un codigo de cupon invalido                                    | Media     |
+| TC-CHECKOUT-008  | Verificar que el correo del usuario autenticado se muestra correctamente        | Baja      |
