@@ -6,6 +6,7 @@ TestCases.md
 4. Cart
 5. Checkout
 6. Orders
+7. API
 
 ## 1. Register
 
@@ -80,3 +81,14 @@ TestCases.md
 | TC-ORDERS-003  | Verificar que el detalle del pedido muestra el Order Id correcto                | Alta      |
 | TC-ORDERS-004  | Volver al Dashboard desde la página **My Orders**                               | Media     |
 | TC-ORDERS-005  | Verificar que un usuario sin pedidos no visualiza órdenes registradas           | Baja      |
+
+## 7. API
+
+| ID         | Caso de prueba                                                                  | Prioridad |
+| ---------- | ------------------------------------------------------------------------------- | --------- |
+| TC-API-001 | Iniciar sesión mediante la API con credenciales válidas                         | Alta      |
+| TC-API-002 | Obtener correctamente el listado de productos (POST Products)                   | Alta      |
+| TC-API-003 | Verificar error al iniciar sesión con credenciales inválidas                    | Alta      |
+| TC-API-004 | Crear un nuevo pedido mediante la API y validar la respuesta                    | Alta      |
+| TC-API-005 | Crear un nuevo pedido mediante la API y validar el Order ID generado en el front| Alta      |
+| TC-API-006 | Simular mediante Mock una respuesta sin pedidos y verificar el mensaje mostrado | Alta      |

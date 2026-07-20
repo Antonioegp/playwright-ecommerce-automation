@@ -33,8 +33,9 @@ Actualmente el proyecto incluye pruebas para:
 - Dashboard
 - Gestión del carrito
 - Búsqueda y filtrado de productos
-- Checkout *(en desarrollo)*
-- Consulta de pedidos *(en desarrollo)*
+- Checkout
+- Consulta de pedidos
+- API
 
 ---
 
@@ -155,14 +156,6 @@ El proyecto incluye documentación funcional para facilitar su comprensión y ma
 - **TestPlan.md** → Objetivos, alcance y planificación de las pruebas.
 - **TestStrategy.md** → Estrategia de automatización y criterios de ejecución.
 - **TestCases.md** → Catálogo de casos de prueba implementados y planificados.
-
----
-
-## Mejoras futuras
-
-Entre las posibles ampliaciones del proyecto se incluyen:
-
-- Automatización de pruebas de API.
 
 ---
 
