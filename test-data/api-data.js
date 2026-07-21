@@ -1,12 +1,12 @@
 export const apiData = {
 
     validLogin: {
-        userEmail: "demoqa@demo.com",
+        userEmail: "demoqa2@demo.com",
         userPassword: "demoQA_123456"
     },
 
     invalidLogin: {
-        userEmail: "demoqa@demo.com",
+        userEmail: "demoqa2@demo.com",
         userPassword: "incorrectPassword"
     },
 
