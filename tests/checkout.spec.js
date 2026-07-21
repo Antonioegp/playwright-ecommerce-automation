@@ -54,7 +54,7 @@ test('@checkout TC-CHECKOUT-002: Verificar que se muestran correctamente los pro
     await expect(page).toHaveURL(/order/);
     
     const checkoutPage = new CheckoutPage(page);
-    await expect(checkoutPage.checkoutProductName.first()).toBeVisible();
+    await expect(checkoutPage.checkoutProductName).toHaveCount(productsCount);
     const allProductsNameInCheckout = await checkoutPage.getAllProductsNameInCheckout();
     expect(allProductsNameInCheckout).toHaveLength(allProductsName.length);
 

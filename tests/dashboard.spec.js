@@ -74,7 +74,7 @@ test('@dashboard TC-DASHBOARD-005: Verificar que se muestra el mensaje de produc
     await expect(page).toHaveURL(url.dashboard);
     await expect(dashboardPage.productCards.first()).toBeVisible();
     await expect(dashboardPage.productTitles.first()).toBeVisible();
-    await dashboardPage.addFirstProductToCart();
+    await dashboardPage.addFirstProductToCartWithoutWaitingToast();
     await expect(dashboardPage.correctAddToCartText).toHaveText(" Product Added To Cart ");
 
 });

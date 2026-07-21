@@ -25,7 +25,13 @@ export class DashboardPage {
 
     async addFirstProductToCart(){
         await this.buttonProductAddToCart.first().click();
+        await expect(this.correctAddToCartText).toBeVisible();
+        await expect(this.correctAddToCartText).toBeHidden();
     }
+
+    async addFirstProductToCartWithoutWaitingToast() {
+    await this.buttonProductAddToCart.first().click();
+   }
 
     async getFirstProductName(){
         const firstProductName = await this.productTitles.first().textContent();
@@ -39,18 +45,18 @@ export class DashboardPage {
 
     async addAllProductsToCart(){
 
-        let productsCount = 0;
-        let cartasDeProductos = await this.productCards.all();
+    const productsCount = await this.productCards.count();
 
-        for (let cartaDeProducto of cartasDeProductos){
-            await cartaDeProducto.locator("button.w-10").click();
-            productsCount++;
-            await expect(this.correctAddToCartText).toBeVisible();
-            await expect(this.correctAddToCartText).toBeHidden();
-        }
+    for (let i = 0; i < productsCount; i++) {
+        const productCard = this.productCards.nth(i);
 
-        return productsCount;
+        await productCard.locator("button.w-10").click();
 
+        await expect(this.correctAddToCartText).toBeVisible();
+        await expect(this.correctAddToCartText).toBeHidden();
+    }
+
+    return productsCount;
     }
 
     async searchAndAddProductToCart(productName){
@@ -65,6 +71,7 @@ export class DashboardPage {
             if(cartaDeProductoName==productName){
 
                 await cartaDeProducto.locator("button.w-10").click();
+                await expect(this.correctAddToCartText).toBeVisible();
                 await expect(this.correctAddToCartText).toBeHidden();
                 break;
             }
