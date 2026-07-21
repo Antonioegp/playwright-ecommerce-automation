@@ -45,6 +45,7 @@ export class DashboardPage {
         for (let cartaDeProducto of cartasDeProductos){
             await cartaDeProducto.locator("button.w-10").click();
             productsCount++;
+            await expect(this.correctAddToCartText).toBeVisible();
             await expect(this.correctAddToCartText).toBeHidden();
         }
 
