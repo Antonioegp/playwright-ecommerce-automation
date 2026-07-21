@@ -21,6 +21,7 @@ export class RegisterPage {
         this.validRegisterMessagge = page.getByRole('heading', { name: 'Account Created Successfully' });
         this.invalidEmailRegister = page.locator("div[aria-label='User already exisits with this Email Id!']");
         this.invalidPasswordText = page.locator("div[aria-label='Password must be 8 Character Long!']");
+        this.buttonBackToLogin = page.getByText('Login here', { exact: true })
         
 
     }
@@ -36,6 +37,12 @@ export class RegisterPage {
         await this.inputConfirmPassword.fill(confirmPassword);
         await this.check18YearsOlder.click();
         await this.buttonRegister.click();
+    }
+
+    async goToLogin(){
+
+        await this.buttonBackToLogin.click();
+
     }
 
 

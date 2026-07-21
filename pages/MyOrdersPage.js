@@ -14,6 +14,7 @@ export class MyOrdersPage {
         this.productTitleInOrdersSummary = page.locator("div.title");
         this.buttonHome = page.locator("button[routerlink='/dashboard/']");
         this.noOrdersMessage = page.getByText('You have No Orders to show at this time. Please Visit Back Us', { exact: true });
+        this.buttonSignOut = page.getByRole('button', { name: 'Sign Out' });
 
     }
 
@@ -55,6 +56,11 @@ export class MyOrdersPage {
 
         await this.buttonHome.click();
 
+    }
+
+    async signOut(){
+
+        await this.buttonSignOut.click();
     }
 }
 

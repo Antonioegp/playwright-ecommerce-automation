@@ -24,6 +24,7 @@ export class CheckoutPage {
         this.correctCheckoutMessagge = page.getByRole('heading', { name: 'Thankyou for the order.' });
         this.checkoutOrderID = page.locator("td.em-spacer-1 label.ng-star-inserted");
         this.buttonOrders = page.getByRole('button', { name: 'ORDERS' });
+        this.buttonSignOut = page.getByRole('button', { name: 'Sign Out' });
 
     }
 
@@ -88,6 +89,11 @@ export class CheckoutPage {
     async goToOrders(){
 
         await this.buttonOrders.click();
+    }
+
+    async signOut(){
+
+        await this.buttonSignOut.click();
     }
 
 }
