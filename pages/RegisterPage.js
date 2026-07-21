@@ -41,6 +41,7 @@ export class RegisterPage {
 
     async goToLogin(){
 
+        await this.buttonBackToLogin.scrollIntoViewIfNeeded();
         await this.buttonBackToLogin.click();
 
     }
