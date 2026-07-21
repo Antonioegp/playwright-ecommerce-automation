@@ -52,6 +52,25 @@ export class DashboardPage {
 
     }
 
+    async searchAndAddProductToCart(productName){
+
+        let cartasDeProductos = await this.productCards.all();
+        let cartaDeProductoName;
+
+        for (let cartaDeProducto of cartasDeProductos){
+
+            cartaDeProductoName = await cartaDeProducto.locator("h5").textContent();
+            
+            if(cartaDeProductoName==productName){
+
+                await cartaDeProducto.locator("button.w-10").click();
+                await expect(this.correctAddToCartText).toBeHidden();
+                break;
+            }
+
+        }
+    }
+
     async getFirstProductPrice(){
         const firstProductPrice = await this.productPrices.first().textContent();
         return firstProductPrice;

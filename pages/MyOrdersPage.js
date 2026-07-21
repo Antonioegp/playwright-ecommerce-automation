@@ -11,6 +11,7 @@ export class MyOrdersPage {
         this.buttonViewOrder = page.locator("tr.ng-star-inserted  td button.btn-primary");
         this.viewOrderDetailsTitle = page.locator("div.email-title");
         this.orderIdInOrderSummary = page.locator("div.col-text");
+        this.productTitleInOrdersSummary = page.locator("div.title");
         this.buttonHome = page.locator("button[routerlink='/dashboard/']");
         this.noOrdersMessage = page.getByText('You have No Orders to show at this time. Please Visit Back Us', { exact: true });
 
