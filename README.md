@@ -10,7 +10,7 @@ El proyecto automatiza los principales flujos funcionales de una aplicación web
 
 Este proyecto tiene como objetivo demostrar conocimientos en automatización de pruebas End-to-End con Playwright, aplicando una arquitectura mantenible y buenas prácticas de desarrollo.
 
-Aunque la aplicación permitiría automatizar un número mucho mayor de escenarios y casos de prueba, el propósito de este repositorio no es alcanzar una cobertura funcional completa, sino mostrar un framework escalable, reutilizable y bien estructurado que refleje un enfoque profesional para el desarrollo de pruebas automatizadas.
+Aunque la aplicación permitiría automatizar un número mucho mayor de escenarios y casos de prueba, el propósito de este repositorio no es alcanzar una cobertura funcional completa, sino demostrar una arquitectura mantenible, reutilizable y alineada con las buenas prácticas habituales en proyectos de automatización profesionales.
 
 ---
 
@@ -18,9 +18,9 @@ Aunque la aplicación permitiría automatizar un número mucho mayor de escenari
 
 - Playwright
 - JavaScript (ES Modules)
-- Node.js
-- Faker.js
 - Page Object Model (POM)
+- Node.js 24 LTS
+- Faker.js
 
 ---
 
@@ -35,7 +35,21 @@ Actualmente el proyecto incluye pruebas para:
 - Búsqueda y filtrado de productos
 - Checkout
 - Consulta de pedidos
-- API
+- Pruebas API
+- Smoke tests
+
+---
+
+## Características
+
+- Automatización End-to-End con Playwright.
+- Arquitectura basada en Page Object Model (POM).
+- Pruebas UI y API.
+- Smoke Tests para validar los flujos críticos.
+- Datos dinámicos mediante Faker.
+- HTML Report automático.
+- Capturas de pantalla y Trace en caso de fallo.
+- Casos de prueba documentados.
 
 ---
 
@@ -74,7 +88,7 @@ Antes de ejecutar el proyecto es necesario tener instalado:
 ### Clonar el repositorio
 
 ```bash
-git clone <url-del-repositorio>
+git clone https://github.com/Antonioegp/playwright-ecommerce-automation.git
 ```
 
 Acceder al directorio del proyecto:
@@ -132,6 +146,14 @@ Visualizar el reporte:
 ```bash
 npx playwright show-report
 ```
+
+---
+
+## Ejecución de la suite
+
+La siguiente imagen muestra una ejecución satisfactoria de la suite completa de pruebas automatizadas.
+
+![Playwright Test Suite](docs/test-suite-passed.png)
 
 ---
 
