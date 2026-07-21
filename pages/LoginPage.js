@@ -5,7 +5,7 @@ export class LoginPage {
         this.page = page;
 
         this.inputUsername = page.getByRole('textbox', {name: 'email@example.com' });
-        this.inputPassword = page.getByRole('textbox', { name: 'enter your passsword' });
+        this.inputPassword = page.locator("input#userPassword");
         this.buttonSignIn = page.getByRole('button', { name: 'Login' });
         this.incorrectLoginMessagge = page.locator("div.toast-message");
         this.incorrectEmailMessagge = page.getByText('*Email is required', { exact: true });
