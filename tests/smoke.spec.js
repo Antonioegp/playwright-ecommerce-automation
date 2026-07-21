@@ -61,6 +61,8 @@ test('@smoke TC-SMOKE-002: Verificar la navegación completa de la aplicación',
     await expect(registerPage.headingRegister).toBeVisible();
     await registerPage.goToLogin();
     await expect(loginPage.inputUsername).toBeVisible();
+    await expect(loginPage.inputPassword).toBeVisible();
+    await expect(loginPage.buttonSignIn).toBeVisible();
     await loginPage.login(users.mainUser.username, users.mainUser.password);
 
     const dashboardPage = new DashboardPage(page);
