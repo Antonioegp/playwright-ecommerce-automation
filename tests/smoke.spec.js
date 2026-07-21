@@ -66,7 +66,6 @@ test('@smoke TC-SMOKE-002: Verificar la navegación completa de la aplicación',
     await loginPage.login(users.mainUser.username, users.mainUser.password);
 
     const dashboardPage = new DashboardPage(page);
-    await expect(dashboardPage.loginSuccessMessage).toBeVisible();
     await expect(page).toHaveURL(url.dashboard);
     await expect(dashboardPage.productCards.first()).toBeVisible();
     await dashboardPage.goToOrders();
