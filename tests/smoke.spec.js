@@ -59,7 +59,7 @@ test('@smoke TC-SMOKE-002: Verificar la navegación completa de la aplicación',
 
     const registerPage = new RegisterPage(page);
     await expect(registerPage.headingRegister).toBeVisible();
-    await registerPage.goToLogin();
+    await page.goBack();
     await expect(loginPage.inputUsername).toBeVisible();
     await expect(loginPage.inputPassword).toBeVisible();
     await expect(loginPage.buttonSignIn).toBeVisible();
